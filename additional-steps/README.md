@@ -25,3 +25,5 @@
 * In this example, different types of data augmentation are applied to the training data such as rotation, shifting, shearing, zooming, and flipping. You can experiment with different types of data augmentation and different parameters to see how they affect the performance of your model.
 
 6. Monitor and debug the model: You can use tools like TensorBoard to monitor the performance of your model and detect any issues or bugs.
+
+* In this example we use the EarlyStopping callback from Keras to stop the training when the performance on the validation set stops improving. We set the monitor to 'val_loss' which means that we will monitor the validation loss during training. The 'patience' parameter is set to 3, which means that training will stop after 3 epochs in which the validation loss doesn't improve.
