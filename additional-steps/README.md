@@ -2,6 +2,8 @@
 
 1. Data augmentation: This is a technique to artificially increase the size of your dataset by applying random transformations to the images. This can help to prevent overfitting and improve the generalization of your model.
 
+* This code will create an ImageDataGenerator object that can be used to randomly apply a series of image transformations to your images. The flow_from_directory method will load the images from the specified directory, resize them to the specified size and return them in batches, providing the augmented data. With this, you can increase the size of your dataset, making the model more robust.
+
 2. Ensemble methods: You can use ensemble methods like bagging and boosting to improve the performance of your model by combining the predictions of multiple models.
 
 3. Transfer learning: Instead of using a pre-trained model from scratch, you can use transfer learning to fine-tune a pre-trained model on a similar dataset. This can help to improve the performance of your model by leveraging the knowledge learned from a related task.
