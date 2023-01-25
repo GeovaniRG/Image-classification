@@ -16,6 +16,10 @@
 
 4. Hyperparameter tuning: You can use techniques such as grid search or random search to find the best values for the hyperparameters of your model.
 
+*  In this example we use the GridSearchCV class from scikit-learn to perform a grid search over the specified hyperparameters. We defined the model and the hyperparameters with possible values, then we use the GridSearchCV to evaluate the model with different combinations of the hyperparameters. The fit method is used to train the model on the training data and the best set of hyperparameters is determined by cross-validation.
+
+* Hyperparameter tuning is the process of systematically searching for the best combination of hyperparameters for a given model, it's a crucial step in the training process. It allows you to improve the performance of your model by finding the optimal set of hyperparameters for your specific problem.
+
 5. Model visualization: You can use techniques like saliency maps and activations maps to visualize the features that the model is using to make predictions.
 
 6. Monitor and debug the model: You can use tools like TensorBoard to monitor the performance of your model and detect any issues or bugs.
