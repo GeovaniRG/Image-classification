@@ -6,6 +6,8 @@
 
 2. Ensemble methods: You can use ensemble methods like bagging and boosting to improve the performance of your model by combining the predictions of multiple models.
 
+* This code creates an ensemble of 10 models using the BaggingClassifier from scikit-learn, with each model trained on a random subset of the training data. The score method is used to evaluate the performance of the ensemble on the test data. You can experiment with different numbers of models in the ensemble and different subsets of the data to see how it affects the performance.
+
 3. Transfer learning: Instead of using a pre-trained model from scratch, you can use transfer learning to fine-tune a pre-trained model on a similar dataset. This can help to improve the performance of your model by leveraging the knowledge learned from a related task.
 
 4. Hyperparameter tuning: You can use techniques such as grid search or random search to find the best values for the hyperparameters of your model.
