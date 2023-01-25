@@ -12,8 +12,6 @@
 
 * In the example I provided, the VGG16 model pre-trained on the ImageNet dataset is loaded, and the top layers of the model are removed. Then new layers are added to the model and the model is fine-tuned on the smaller dataset you have. By using a pre-trained model as a starting point, you can leverage the knowledge learned from the larger dataset and improve the performance of your model on the smaller dataset.
 
-* It's important to notice that the pre-trained model should be similar to the problem you want to solve, in this case, image classification. Also, it's common to freeze the weights of the pre-trained layers so they don't get updated during training, this helps to maintain the features that the model learned from the pre-training.
-
 4. Hyperparameter tuning: You can use techniques such as grid search or random search to find the best values for the hyperparameters of your model.
 
 *  In this example we use the GridSearchCV class from scikit-learn to perform a grid search over the specified hyperparameters. We defined the model and the hyperparameters with possible values, then we use the GridSearchCV to evaluate the model with different combinations of the hyperparameters. The fit method is used to train the model on the training data and the best set of hyperparameters is determined by cross-validation.
@@ -21,5 +19,9 @@
 * Hyperparameter tuning is the process of systematically searching for the best combination of hyperparameters for a given model, it's a crucial step in the training process. It allows you to improve the performance of your model by finding the optimal set of hyperparameters for your specific problem.
 
 5. Model visualization: You can use techniques like saliency maps and activations maps to visualize the features that the model is using to make predictions.
+
+* This code uses the ImageDataGenerator class from Keras to perform data augmentation. Data augmentation is a technique where you artificially increase the size of your dataset by applying random transformations to the images. This can help to make your model more robust and improve its performance by reducing overfitting.
+
+* In this example, different types of data augmentation are applied to the training data such as rotation, shifting, shearing, zooming, and flipping. You can experiment with different types of data augmentation and different parameters to see how they affect the performance of your model.
 
 6. Monitor and debug the model: You can use tools like TensorBoard to monitor the performance of your model and detect any issues or bugs.
