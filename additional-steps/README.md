@@ -12,7 +12,7 @@
 
 * In the example I provided, the VGG16 model pre-trained on the ImageNet dataset is loaded, and the top layers of the model are removed. Then new layers are added to the model and the model is fine-tuned on the smaller dataset you have. By using a pre-trained model as a starting point, you can leverage the knowledge learned from the larger dataset and improve the performance of your model on the smaller dataset.
 
-It's important to notice that the pre-trained model should be similar to the problem you want to solve, in this case, image classification. Also, it's common to freeze the weights of the pre-trained layers so they don't get updated during training, this helps to maintain the features that the model learned from the pre-training.
+* It's important to notice that the pre-trained model should be similar to the problem you want to solve, in this case, image classification. Also, it's common to freeze the weights of the pre-trained layers so they don't get updated during training, this helps to maintain the features that the model learned from the pre-training.
 
 4. Hyperparameter tuning: You can use techniques such as grid search or random search to find the best values for the hyperparameters of your model.
 
