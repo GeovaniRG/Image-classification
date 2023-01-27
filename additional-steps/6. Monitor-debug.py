@@ -1,3 +1,5 @@
+#//Geovani Rodriguez//#
+
 from keras.callbacks import EarlyStopping
 from keras.models import Sequential
 from keras.layers import Dense
